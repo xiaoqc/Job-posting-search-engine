@@ -1,0 +1,8 @@
+<cas:workflow xmlns:cas="http://oodt.jpl.nasa.gov/1.0/cas"
+  name="FileConcatenatorWorkflow"
+  id="urn:oodt:FileConcatenatorWorkflow">
+ 
+  <tasks>
+    <task id="urn:oodt:FileConcatenator"/>
+  </tasks>
+</cas:workflow>

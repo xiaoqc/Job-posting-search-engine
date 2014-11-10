@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pgeConfig>
+  <exe shell="/bin/bash">
+    <!-- change the following cmd tag to  you json folder path -->
+    <cmd>/Users/jixin/Downloads/subsetJson</cmd>
+    <cmd>pwd</cmd>
+    <cmd>echo [Filename]</cmd>
+    <cmd>echo [Filename]|poster -u http://localhost:8983/solr/update/json</cmd>
+  </exe>
+  <output>
+  </output>
+  <!-- Custom metadata to add to output files -->
+  <customMetadata>
+  </customMetadata>
+ 
+</pgeConfig>

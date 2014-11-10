@@ -1,0 +1,22 @@
+
+<cas:tasks xmlns:cas="http://oodt.jpl.nasa.gov/1.0/cas">
+
+  <task id="urn:oodt:FileConcatenator" name="FileConcatenator"
+  class="org.apache.oodt.pge.examples.fileconcatenator.FileConcatenatorPGETask">
+ 
+  <conditions/>
+ 
+  <configuration>
+    <!-- change PGETask_ConfigFilePath value to [your pge folder path]/file_concatenator/pge-configs/PGEConfig.xml -->
+    <!-- change PCS_ActionRepoFile value to [your crawler folder path]/policy/crawler-config.xml-->
+     <property name="PGETask_Name" value="FileConcatenator"/>
+     <property name="PGETask_ConfigFilePath" value="/usr/local/oodt/pge/file_concatenator/pge-configs/PGEConfig.xml" envReplace="true"/>
+     <property name="PGETask_DumpMetadata" value="true"/>
+     <property name="PCS_WorkflowManagerUrl" value="http://localhost:9001" envReplace="true" />
+     <property name="PCS_FileManagerUrl"     value="http://localhost:9000" envReplace="true"/>
+     <property name="PCS_MetFileExtension" value="met"/>
+     <property name="PCS_ClientTransferServiceFactory" value="org.apache.oodt.cas.filemgr.datatransfer.LocalDataTransferFactory"/>
+     <property name="PCS_ActionRepoFile" value="file:///usr/local/oodt/crawler/policy/crawler-config.xml" envReplace="true"/>
+  </configuration>
+</task>
+</cas:tasks>
